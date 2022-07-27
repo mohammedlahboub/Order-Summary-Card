@@ -1,4 +1,4 @@
-#### Live Site : [Here](https://mohammedlahboub.github.io/Four-card-feature-section)
+#### Live Site : [Here](https://mohammedlahboub.github.io/Order-Summary-Card)
 # Desktop view :
 ![](./screenshots/Screenshot-desktop.png)
 # Mobile View :
