@@ -1,0 +1,227 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/* font-size: 16px; */
+	/* font: inherit; */
+	vertical-align: baseline;
+   
+
+}
+:root{
+    --primary-pale-blue: hsl(255,100%, 94%);
+    --primary-bright-blue: hsl(245, 75%, 52%);
+    --neutral-very-pale-blue: hsl(225, 100%, 98%);
+    --neutral-desaturated-blue:hsl(224, 23%, 55%);
+    --neutral-dark-blue:hsl(223, 47%, 23%);
+    --font-p:16px;
+}
+    
+/* ###################################### body ###################################### */
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--neutral-very-pale-blue);
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+}
+
+/* ###################################### order ###################################### */
+.order{
+    font-family: 'Red Hat Display';
+    border-radius: 1.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px;
+    box-shadow: 0em 0.5em 1em hsl(224, 23%, 85%);
+}
+
+/* ###################################### order--figure ###################################### */
+.order--figure{
+    z-index: -1;
+    width: 100%;
+    margin-block: 0;
+    margin-inline:0 ;
+    border-radius: 1.2em 1.2em 0  0;
+    background-color: #fff;
+    /* box-shadow: 16px 18px 10px white; */
+
+
+
+
+
+}
+/* ################### order--img ################### */
+.order--img{
+    z-index: 0;
+    width: 100%;
+    border-radius: 1em 1em 0  0;
+}
+
+
+/* ###################################### order--summary ###################################### */
+.order--summary{
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    align-items: center;
+    padding: 3em;
+    border-radius: 0 0 1.2em 1.2em ;
+    /* box-shadow: 16px 14px 10px hsl(245, 75%, 72%); */
+    background-color: #fff;
+
+}
+/* ################### order--heading ################### */
+.order--heading{
+    font-size: 2em;
+    font-weight: 900;
+    color: var(--neutral-dark-blue);
+    text-align: center;
+}
+/* ################### order--quote ################### */
+.order--quote{
+    font-weight: 500;
+    text-align: center;
+    font-size: var(--font-p);
+    color: var(--neutral-desaturated-blue);
+    line-height: 1.6em;
+
+}
+/* ################### order--plan ################### */
+.order--plan{
+    background-color: var(--neutral-very-pale-blue);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 1.3em;
+    /* border-radius: 0.7em; */
+    border-radius: 4em 0.7em 0.7em 4em ;
+    box-shadow: 0em 0.8em 0.8em var(--primary-pale-blue);
+
+    
+}
+/* ######### order--plan--annual ######### */
+.order--plan--annual{
+    margin: 0 auto 0 1.3em;
+}
+/* ## plan--annual--heading ## */
+.plan--annual--heading{
+    font-weight: 900;
+    font-size: 0.90em;
+    color: var(--neutral-dark-blue);
+
+}
+/* ## plan--annual--price ## */
+.plan--annual--price{
+    font-size: 0.90em;
+    font-weight: 500;
+    color:var(--neutral-desaturated-blue) ;
+}
+/* ######### order--plan--change ######### */
+.order--plan--change{
+    color: var(--primary-bright-blue);
+    font-weight: 600;
+    font-size: 14px;
+}
+.order--plan--change:hover{
+    opacity: 70%;
+    text-decoration: none;
+}
+/* ################### order--pay ################### */
+.order--pay{
+    width: 100%;
+    background-color:var(--primary-bright-blue) ;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 900;
+    padding: 1em;
+    box-shadow: 0em 0.8em 0.8em var(--primary-pale-blue);
+    border-radius: 3em 0.7em  0.7em 3em      ; 
+}
+.order--pay:hover{
+    opacity: 80%;
+
+
+}
+/* ################### order--cancel ################### */
+.order--cancel{
+    color: var(--neutral-desaturated-blue);
+    text-decoration: none;
+}
+.order--cancel:hover{
+    color: var(--neutral-dark-blue);
+}
+
+/* ###################################### footer ###################################### */
+
+footer{
+    max-width: 450px;
+    padding: 0.3em  1em;
+    background-color: #fff;
+    border-radius: 2em 0.5em 0.5em 2em ;
+    position: absolute;
+    bottom: 2em;
+    font-size: 11px;
+
+}
+.attribution{
+    box-shadow: 0em 0.5em 1em hsl(224, 23%, 85%);
+     text-align: center; 
+}
+.attribution a{
+    font-weight: 600;
+     color: hsl(323, 100%, 67%);
+}
+/* ###################################### Media ###################################### */
+@media (max-width:600px) {
+    .order{
+        max-width: 320px;
+    }
+    .order--summary{
+        padding: 2em;
+    }
+    footer{
+        max-width: 320px;
+        font-size: 7.8px
+    }
+    body{
+
+        background-image: url(../images/pattern-background-mobile.svg);
+
+    }
+}
+/* ######################################  ###################################### */
+/* ######################################  ###################################### */
+/* ###################  ################### */
+/* ###################  ################### */
+/* ###################  ################### */
+
+    
+
+
+    
